@@ -36,6 +36,7 @@
                 id: "lng",
                 alias: "Longitude",
                 columnRole: "dimension",
+                geoRole: tableau.geographicRoleEnum.city,
                 dataType: tableau.dataTypeEnum.float
             },
             {   
