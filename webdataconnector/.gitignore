@@ -1,4 +1,5 @@
 # Dependency directories
-Examples/OAuthProxyExample/node_modules
+Examples/
+Simulator/
 node_modules/
 _site/
