@@ -30,13 +30,14 @@
                 id: "lat",
                 alias: "Latitude",
                 columnRole: "dimension",
+                geoRole: tableau.geographicRoleEnum.latitude,
                 dataType: tableau.dataTypeEnum.float
             },
             {
                 id: "lng",
                 alias: "Longitude",
                 columnRole: "dimension",
-                geoRole: tableau.geographicRoleEnum.city,
+                geoRole: tableau.geographicRoleEnum.longitude,
                 dataType: tableau.dataTypeEnum.float
             },
             {   
@@ -137,7 +138,7 @@
     var apiKey = $('#apikey').val().trim();
         if (apiKey) {
             tableau.connectionData = apiKey; // set the api key as the connection data so we can get to it when we fetch the data
-            tableau.connectionName = 'JCDecaux API Feed: ' + apiKey; // name the data source. This will be the data source name in Tableau
+            tableau.connectionName = 'JCDecaux API Feed - ' + apiKey; // name the data source. This will be the data source name in Tableau
             tableau.submit();
         };
     };
