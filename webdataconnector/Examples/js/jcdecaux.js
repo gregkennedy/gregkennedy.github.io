@@ -112,6 +112,8 @@
 
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
+                var lastUpdate = new Date(feat[i].last_update);
+
                 tableData.push({
                     "number": feat[i].number,
                     "name": feat[i].name,
@@ -125,7 +127,7 @@
                     "bike_stands": feat[i].bike_stands,
                     "available_bike_stands": feat[i].available_bike_stands,
                     "available_bikes": feat[i].available_bikes,
-                    "last_update": feat[i].last_update,
+                    "last_update": lastUpdate,
                 });
             }
 
