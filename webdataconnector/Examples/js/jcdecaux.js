@@ -93,7 +93,7 @@
 
         var tableSchema = {
             id: "JCDecauxFeed",
-            alias: "JCDecaux",
+            alias: "JCDecaux Stations",
             columns: cols
         };
 
